@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estatistica", "Estatistica\Estatistica.csproj", "{DF5BB261-A4AD-47C7-B4F4-E3ED69D5489C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteDeMesa", "TesteDeMesa\TesteDeMesa.csproj", "{67CF9EF6-E523-4F74-82B9-F16C31EC66F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estatistica.Test", "Estatistica.Test\Estatistica.Test.csproj", "{0C38E4F6-C831-4073-9035-3C426730844F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF5BB261-A4AD-47C7-B4F4-E3ED69D5489C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5BB261-A4AD-47C7-B4F4-E3ED69D5489C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5BB261-A4AD-47C7-B4F4-E3ED69D5489C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5BB261-A4AD-47C7-B4F4-E3ED69D5489C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CF9EF6-E523-4F74-82B9-F16C31EC66F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CF9EF6-E523-4F74-82B9-F16C31EC66F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CF9EF6-E523-4F74-82B9-F16C31EC66F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CF9EF6-E523-4F74-82B9-F16C31EC66F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C38E4F6-C831-4073-9035-3C426730844F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C38E4F6-C831-4073-9035-3C426730844F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C38E4F6-C831-4073-9035-3C426730844F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C38E4F6-C831-4073-9035-3C426730844F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
