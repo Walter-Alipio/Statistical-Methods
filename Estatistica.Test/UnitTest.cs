@@ -188,7 +188,7 @@ public class UnitTest1
 
         var expected = 19.41863366288507;
         // When
-        var desvioPadrao = estatistica.DesvioPadrao(values, frequency);
+        var desvioPadrao = estatistica.DesvioPadraoFrequencia(values, frequency);
         // Then
         Assert.True(desvioPadrao != 0);
         Assert.Equal(expected, desvioPadrao);
@@ -277,6 +277,22 @@ public class UnitTest1
         var probabilidadeDeOcorrencia = estatistica.ProbabilidadeOcorrencia(events, sample);
         // Then
         Assert.Equal(expected, probabilidadeDeOcorrencia);
+    }
+
+    [Fact]
+    public void PrincipioFundamentalContagem_ReturnsDoubleValue()
+    {
+        // Given
+        var estatistica = new EstatisticaClass();
+        var possibilities = 10;
+        var steps = 4;
+
+        var expected = 10000.0;
+        // When 
+
+        var pfc = estatistica.PrincipioFundamentalContagem(possibilities, steps);
+        // Then
+        Assert.Equal(expected, pfc);
     }
 
     [Fact]

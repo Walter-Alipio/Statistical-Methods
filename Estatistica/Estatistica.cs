@@ -253,7 +253,7 @@ public class EstatisticaClass
         return Math.Sqrt(somatorio / quantidade);
     }
 
-    public double DesvioPadrao(double[] pontoMedio, int[] frequencia)
+    public double DesvioPadraoFrequencia(double[] pontoMedio, int[] frequencia)
     {
         var quantidade = pontoMedio.Length;
         var media = this.MediaSimples(pontoMedio);
@@ -313,11 +313,16 @@ public class EstatisticaClass
         return this.Fatorial(numerador) / (this.Fatorial(denominador) * this.Fatorial(numerador - denominador));
     }
 
+    public double PrincipioFundamentalContagem(int posibilidades, int etapas)
+    {
+        return Math.Pow(posibilidades, etapas);
+    }
+
     public double ArranjoSimples(int numerador, int denominador)
     {
         if (numerador < 0 || denominador < 0)
         {
-            throw new ArgumentException("Os parâmetros devem ser números inteiros");
+            throw new ArgumentException("Os parâmetros devem ser números positivos");
         }
         return this.Fatorial(numerador) / this.Fatorial(numerador - denominador);
     }
