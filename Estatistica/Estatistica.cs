@@ -202,6 +202,32 @@ public class EstatisticaClass
         return somatorio / quantidade;
     }
 
+    public double DesvioMedioPorFrequencia(List<double[]> listaValores, int[] frequencia)
+    {
+        List<double> pontoMedio = new List<double>();
+
+        foreach (var item in listaValores)
+        {
+            pontoMedio.Add(this.PontoMedio(item[0], item[1]));
+        }
+
+        var mediaPonderada = this.MediaPonderada(pontoMedio.ToArray(), frequencia);
+
+        var numerador = 0.0;
+        int tamanhoLista = pontoMedio.Count();
+
+        for (int i = 0; i < tamanhoLista; i++)
+        {
+            var aux = pontoMedio[i] - mediaPonderada;
+            if (aux < 0) aux *= -1;
+
+            numerador += aux * frequencia[i];
+        }
+        var denominador = frequencia.Sum();
+
+        return numerador / denominador;
+    }
+
     public double Variancia(double[] baseDeCalculo)
     {
         var media = this.MediaSimples(baseDeCalculo);

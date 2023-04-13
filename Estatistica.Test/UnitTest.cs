@@ -124,6 +124,33 @@ public class UnitTest1
         Assert.Equal(expected, desvioMedioSimples);
     }
 
+    [Fact]
+    public void DesvioMedioPorFrequencia_ReturnsDoubleValue()
+    {
+        // Given
+        var estatistica = new EstatisticaClass();
+
+        var values = new List<double[]>(){
+           new double[] {0.50 , 0.51},
+           new double[] {0.51 , 0.52},
+           new double[] {0.52 , 0.53},
+           new double[] {0.53 , 0.54},
+           new double[] {0.54 , 0.55},
+           new double[] {0.55 , 0.56}
+        };
+
+        int[] frequency = new int[]
+        {
+            12,35,21,10,8, 1
+        };
+        var expected = "0.0098";
+        // When
+        var desvioMedio = estatistica.DesvioMedioPorFrequencia(values, frequency);
+        // Then
+        Assert.IsType<double>(desvioMedio);
+        Assert.Equal(expected, desvioMedio.ToString("N4"));
+    }
+
     [Theory]
     [InlineData(27, 30, 25)]
     [InlineData(22, 25, 20)]
