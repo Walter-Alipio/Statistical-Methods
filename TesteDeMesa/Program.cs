@@ -3,4 +3,4 @@ using Estatistica;
 
 
 Console.WriteLine("Biblioteca estatística!");
-var estatistica = new EstatisticaClass();
+
