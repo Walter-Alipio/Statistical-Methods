@@ -47,9 +47,9 @@ public static class CombinatorialAnalysis
         return Factorial(numerator) / Factorial(numerator - denominator);
     }
 
-    public static double Combination(int elementos, int passo)
+    public static double Combination(int elements, int step)
     {
-        return Binomial(elementos, passo);
+        return Binomial(elements, step);
     }
 
     public static long CombinationLong(int elements, int step)

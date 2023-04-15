@@ -89,7 +89,7 @@ public static class CentralTendency
         return mode.Order().ToList();
     }
 
-    public static int Mode(double[] values, int[] frequency)
+    public static int ModeSingleOne(int[] frequency)
     {
         int mode = 0;
         int index = 0;
