@@ -4,7 +4,9 @@
 
 ## 🔨 Objetivo do projeto
 
-O objetivo desse repositório é manter uma coleção de métodos úteis para trabalhar com dadeos estátisticos.
+O objetivo desse repositório é manter uma coleção de métodos úteis para trabalhar com dados estátisticos. Por exemplo: calculo de média, moda e mediana, média ponderada, etc.
+<br>
+É possível visualizar uma breve descrição das classes e métodos em [Classes e métodos](#classes-e-métodos)
 
 ## ✔️ Tecnologias utilizadas
 
@@ -23,7 +25,7 @@ O objetivo desse repositório é manter uma coleção de métodos úteis para tr
 
 | CentralTendency Class |                                                         |                                                                                                    |
 | --------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Return Type           | Methods names                                           | Description                                                                                        |
+| Return Type           | Method name                                             | Description                                                                                        |
 | double                | Mean(int[] values)                                      | Retorna a média de um array do tipo int                                                            |
 | double                | Mean(double[] values)                                   | Retorna a média de um array do tipo double                                                         |
 | double                | WeightedAverage(int[] values, int[] weight)             | Retorna a Média Ponderada de um array de valores do tipo int e do array de pesos do tipo int       |
@@ -41,10 +43,10 @@ O objetivo desse repositório é manter uma coleção de métodos úteis para tr
 
 | CombinatorialAnalysis Class |                                               |                                                                               |
 | --------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------- |
-| Return Type                 | Methods names                                 | Description                                                                   |
+| Return Type                 | Method name                                   | Description                                                                   |
 | double                      | Factorial(int number)                         | Retorna o fatorial de um número                                               |
 | double                      | Summations(int start, int end)                | Retorna o somatório dado um valor de inicio e fim                             |
-| double                      | Binomial(int numerator, int denominator)      | Retorna o binomial de n(numerador),p(denominador) do tipo int                 |
+| double                      | Binomial(int numerator, int denominator)      | Retorna o binomial de n(numerador), p(denominador) do tipo int                |
 | double                      | CountingPrinciple(int possibility, int steps) | Retorna o total de possibilidades dados o valor e quantidade de passos        |
 | double                      | Arrangements(int numerator, int denominator)  | Retorna o arranjo simples de n(numerador) e k(denominador)                    |
 | double                      | Combination(int elements, int step)           | Retorna a combinação simples de n(elements) e p(steps)                        |
@@ -54,7 +56,7 @@ O objetivo desse repositório é manter uma coleção de métodos úteis para tr
 
 | Dispersion Class |                                                                      |                                                                                                                      |
 | ---------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Return Type      | Methods names                                                        | Description                                                                                                          |
+| Return Type      | Method name                                                          | Description                                                                                                          |
 | double           | Amplitude(int superiorLimit, int inferiorLimit)                      | Retorna a amplitude dado um limite superior e um limite inferior                                                     |
 | double           | MeanDeviation(double[] values)                                       | Retorna o Desvio Médio de um array do tipo double                                                                    |
 | double           | MeanDeviationByFrequency(List<double[]> valuesList, int[] frequency) | Retorna o Desvio Médio por Frequência de uma lista de arrays do tipo double e um array de frequência do tipo inteiro |
@@ -67,14 +69,14 @@ O objetivo desse repositório é manter uma coleção de métodos úteis para tr
 
 | Probabilities Class |                                                     |                                                                                                           |
 | ------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| Return Type         | Methods names                                       | Description                                                                                               |
+| Return Type         | Method name                                         | Description                                                                                               |
 | double              | OccurrenceProbability(double @event, double sample) | Retorna a probabilidade de ocorrência de um evento dado um evento do tipo double e amostra do tipo double |
 
 <br>
 
 | StatisticalInference Class |                                                                 |                                                                                                                      |
 | -------------------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Return Type                | Methods names                                                   | Description                                                                                                          |
+| Return Type                | Method name                                                     | Description                                                                                                          |
 | decimal                    | BinomialDistribution(int n, int x, double success, double fail) | Retorna a Distribuição Binomial do tipo double dado                                                                  |
 | double                     | PearsonCorrelationCoefficient(int[] x, int[] y)                 | Retorna o Coeficiênte de Correlação de Pearson dado um array do tipo int, coluna x, e um array do tipo int, coluna y |
 | double                     | LinearCorrelationCoefficient(int[] columX, int[] columY)        | Retorna o Coeficiênte de Correlação Linear dado um array do tipo int, coluna x, e um array do tipo int, coluna y     |
