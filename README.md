@@ -1,6 +1,6 @@
 # :chart_with_upwards_trend: Biblioteca-Estatística
 
-## :chart_with_downwards_trend :chart_with_downwards_trend: Projeto de estudos
+## :chart_with_downwards_trend: Projeto de estudos
 
 ## 🔨 Objetivo do projeto
 
