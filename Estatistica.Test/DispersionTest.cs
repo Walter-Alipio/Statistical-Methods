@@ -5,7 +5,7 @@ public class DispersionTest
     [Theory]
     [InlineData(1.5, new double[] { 4, 5, 7, 8 })]
     [InlineData(0.8, new double[] { 6, 7, 7, 8, 8, 8, 8, 9, 9, 10 })]
-    public void MeanDeviation_ReturnsDoubleValue(double expected, double[] values)
+    public void MeanDeviation_ReturnsCalculatedMeanDeviation_ForAnArrayOfValues(double expected, double[] values)
     {
         // Given
 
@@ -17,7 +17,7 @@ public class DispersionTest
     }
 
     [Fact]
-    public void MeanDeviationByFrequency_ReturnsDoubleValue()
+    public void MeanDeviationByFrequency_ReturnsCalculatedMeanDeviation_GivenAListOfValueRangesAndAnArrayOfFrequencies()
     {
         // Given
 
@@ -36,10 +36,10 @@ public class DispersionTest
         };
         var expected = "0.0098";
         // When
-        var desvioMedio = Dispersion.MeanDeviationByFrequency(values, frequency);
+        var calculatedMeanDeviation = Dispersion.MeanDeviationByFrequency(values, frequency);
         // Then
-        Assert.IsType<double>(desvioMedio);
-        Assert.Equal(expected, desvioMedio.ToString("N4"));
+        Assert.IsType<double>(calculatedMeanDeviation);
+        Assert.Equal(expected, calculatedMeanDeviation.ToString("N4"));
     }
 
     [Theory]
@@ -47,7 +47,7 @@ public class DispersionTest
     [InlineData(5.36, new double[] { 15, 12, 16, 10, 11 })]
     [InlineData(1.8399999999999999, new double[] { 11, 10, 8, 11, 12 })]
     [InlineData(6, new double[] { 8, 12, 15, 9, 11 })]
-    public void Variance_ReturnsDoubleValue(double expected, double[] calcBase)
+    public void Variance_ReturnsCalculatedVariance_ForAnArrayOfValues(double expected, double[] calcBase)
     {
         // Given
 
@@ -61,7 +61,7 @@ public class DispersionTest
     [Theory]
     [InlineData(0.09797958971132709, new double[] { 1.43, 1.25, 1.49, 1.33, 1.45 })]
     [InlineData(1.224744871391589, new double[] { 21, 22, 22, 21, 24 })]
-    public void SampleStandardDeviation_ReturnsDoubleValue(double expected, double[] values)
+    public void SampleStandardDeviation_ReturnsStandardDeviation_ForAnArrayOfValues(double expected, double[] values)
     {
         // Given
 
@@ -73,7 +73,7 @@ public class DispersionTest
     }
 
     [Fact]
-    public void StandardDeviationByFrequency_ReturnsDoubleValue()
+    public void StandardDeviationByFrequency_ReturnsStandardDeviation_GivenAnArrayOfValuesAndAnArrayOfFrequency()
     {
         // Given
 
