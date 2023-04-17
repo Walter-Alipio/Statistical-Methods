@@ -1,6 +1,6 @@
 # :chart_with_upwards_trend: Biblioteca-Estatística
 
-## chart_with_downwards_trend :chart_with_downwards_trend: Projeto de estudos
+## :chart_with_downwards_trend :chart_with_downwards_trend: Projeto de estudos
 
 ## 🔨 Objetivo do projeto
 
@@ -31,7 +31,7 @@ O objetivo desse repositório é manter uma coleção de métodos úteis para tr
 | double                | WeightedAverage(int[] values, int[] weight)             | Retorna a Média Ponderada de um array de valores do tipo int e do array de pesos do tipo int       |
 | double                | WeightedAverage(double[] values, int[] weight)          | Retorna a Média Ponderada de um array de valores do tipo double e do array de pesos do tipo int    |
 | double                | WeightAverageByFrequency(int[] values, int[] frequency) | Retorna a Média Ponderada de um array de valores do tipo int e do array de frequências do tipo int |
-| List<int>             | Mode(int[] values)                                      | Retorna uma lista com a moda do array de tipo int                                                  |
+| List<int> int         | Mode(int[] values)                                      | Retorna uma lista com a moda do array de tipo int                                                  |
 | double                | Median(double[] values)                                 | Retorna a Mediana de um array do tipo double                                                       |
 | double                | Median(int[] values)                                    | Retorna a Mediana de um array do tipo int                                                          |
 | double                | Midpoint(int superiorLimit, int inferiorLimit)          | Retorna o Ponto Médio dado o limite superior e o limite inferior do tipo int                       |
