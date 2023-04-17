@@ -33,14 +33,14 @@ public class StatisticalInferenceTest
     }
 
     [Theory]
-    [InlineData(0.0000567894470833484, 31, 10, 0.75, 0.25)]
-    [InlineData(0.000424087760505323, 100, 6, 0.06, 0.84)]
-    public void BinomialDistribution_ReturnsDecimalValue(decimal expected, int n, int x, double success, double fail)
+    [InlineData(0.0000567894470833484, 31, 10, 0.75)]
+    [InlineData(0.152499399025936, 100, 6, 0.16)]
+    public void BinomialDistribution_ReturnsDecimalValue(decimal expected, int attempts, int target, double success)
     {
         // Given
 
         // When
-        var binomialDistribution = StatisticalInference.BinomialDistribution(n, x, success, fail);
+        var binomialDistribution = StatisticalInference.BinomialDistribution(attempts, target, success);
         // Then
         Assert.Equal(expected, binomialDistribution);
     }

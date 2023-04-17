@@ -71,12 +71,13 @@ O objetivo desse repositório é manter uma coleção de métodos úteis para tr
 | ------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | Return Type         | Method name                                         | Description                                                                                               |
 | double              | OccurrenceProbability(double @event, double sample) | Retorna a probabilidade de ocorrência de um evento dado um evento do tipo double e amostra do tipo double |
+| double              | ProbabilityOfFail(double @event, double sample)     | Retorna a probabilidade de falha de um evento dado um evento do tipo double e amostra do tipo double      |
 
 <br>
 
-| StatisticalInference Class |                                                                 |                                                                                                                      |
-| -------------------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Return Type                | Method name                                                     | Description                                                                                                          |
-| decimal                    | BinomialDistribution(int n, int x, double success, double fail) | Retorna a Distribuição Binomial do tipo double dado                                                                  |
-| double                     | PearsonCorrelationCoefficient(int[] x, int[] y)                 | Retorna o Coeficiênte de Correlação de Pearson dado um array do tipo int, coluna x, e um array do tipo int, coluna y |
-| double                     | LinearCorrelationCoefficient(int[] columX, int[] columY)        | Retorna o Coeficiênte de Correlação Linear dado um array do tipo int, coluna x, e um array do tipo int, coluna y     |
+| StatisticalInference Class |                                                                             |                                                                                                                                                                                      |
+| -------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Return Type                | Method name                                                                 | Description                                                                                                                                                                          |
+| decimal                    | BinomialDistribution(int attempts, int target, double success, double fail) | Retorna a Distribuição Binomial do tipo double dado o número de tentativas(int), a quantidade de resultados positivos desejado(int) e probabilidade de ocorrência de sucesso(double) |
+| double                     | PearsonCorrelationCoefficient(int[] x, int[] y)                             | Retorna o Coeficiênte de Correlação de Pearson dado um array do tipo int, coluna x, e um array do tipo int, coluna y                                                                 |
+| double                     | LinearCorrelationCoefficient(int[] columX, int[] columY)                    | Retorna o Coeficiênte de Correlação Linear dado um array do tipo int, coluna x, e um array do tipo int, coluna y                                                                     |

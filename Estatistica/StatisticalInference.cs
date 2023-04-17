@@ -2,11 +2,12 @@ namespace Estatistica;
 
 public static class StatisticalInference
 {
-    public static decimal BinomialDistribution(int n, int x, double success, double fail)
+    public static decimal BinomialDistribution(int attempts, int target, double success)
     {
-        var combination = CombinatorialAnalysis.Binomial(n, x);
-        var probSuccess = Math.Pow(success, x);
-        var probFail = Math.Pow(fail, (n - x));
+        var fail = 1 - success;
+        var combination = CombinatorialAnalysis.Binomial(attempts, target);
+        var probSuccess = Math.Pow(success, target);
+        var probFail = Math.Pow(fail, (attempts - target));
 
         return (decimal)((combination * probSuccess * probFail) * 100);
     }
