@@ -59,20 +59,30 @@ public class CombinatorialAnalysisTest
     [Theory]
     [InlineData(792, 12, 5)]
     [InlineData(455, 15, 12)]
-    public void Combination_ReturnsDoubleValue(double expected, int elements, int step)
+    public void Combination_ReturnsCalculatedCombination_GivenNumberOfElementsAndSteps(double expected, int elements, int step)
     {
         // Given
 
         // When
-        var combinacaoSimples = CombinatorialAnalysis.Combination(elements, step);
+        var CalculatedCombination = CombinatorialAnalysis.Combination(elements, step);
         // Then
-        Assert.Equal(expected, combinacaoSimples);
+        Assert.Equal(expected, CalculatedCombination);
     }
 
+    [Fact]
+    public void CombinationLong_ReturnsCalculatedCombinationValue_AsTypeLong()
+    {
+        // Given
 
+        var expected = 50063860;
+        // When
+        var combinacaoSimplesLong = CombinatorialAnalysis.CombinationLong(60, 6);
+        // Then
+        Assert.Equal(expected, combinacaoSimplesLong);
+    }
 
     [Fact]
-    public void CountingPrinciple_ReturnsDoubleValue()
+    public void CountingPrinciple_ReturnsTotalOfPossibilities_ForEqualPossibilitiesAndAmountOfSteps()
     {
         // Given
 
@@ -82,20 +92,8 @@ public class CombinatorialAnalysisTest
         var expected = 10000.0;
         // When 
 
-        var pfc = CombinatorialAnalysis.CountingPrinciple(possibilities, steps);
+        var pfc = CombinatorialAnalysis.CountingPrincipleForEqualProbabilities(possibilities, steps);
         // Then
         Assert.Equal(expected, pfc);
-    }
-
-    [Fact]
-    public void CombinacaoSimplesLong_ReturnsLongValue()
-    {
-        // Given
-
-        var expected = 50063860;
-        // When
-        var combinacaoSimplesLong = CombinatorialAnalysis.CombinationLong(60, 6);
-        // Then
-        Assert.Equal(expected, combinacaoSimplesLong);
     }
 }

@@ -6,4 +6,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageId>LibraryOfStatiticalMethods</PackageId>
+    <Title>Statistical library</Title>
+    <Version>1.0.0</Version>
+    <Authors>Walter Alípio</Authors>
+  </PropertyGroup>
+
 </Project>

@@ -41,16 +41,16 @@ O objetivo desse repositório é manter uma coleção de métodos úteis para tr
 
 <br>
 
-| CombinatorialAnalysis Class |                                               |                                                                               |
-| --------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------- |
-| Return Type                 | Method name                                   | Description                                                                   |
-| double                      | Factorial(int number)                         | Retorna o fatorial de um número                                               |
-| double                      | Summations(int start, int end)                | Retorna o somatório dado um valor de inicio e fim                             |
-| double                      | Binomial(int numerator, int denominator)      | Retorna o binomial de n(numerador), p(denominador) do tipo int                |
-| double                      | CountingPrinciple(int possibility, int steps) | Retorna o total de possibilidades dados o valor e quantidade de passos        |
-| double                      | Arrangements(int numerator, int denominator)  | Retorna o arranjo simples de n(numerador) e k(denominador)                    |
-| double                      | Combination(int elements, int step)           | Retorna a combinação simples de n(elements) e p(steps)                        |
-| long                        | CombinationLong(int elements, int step)       | Retorna um valor do tipo long da combinação simples de n(elements) e p(steps) |
+| CombinatorialAnalysis Class |                                                                    |                                                                                                   |
+| --------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| Return Type                 | Method name                                                        | Description                                                                                       |
+| double                      | Factorial(int number)                                              | Retorna o fatorial de um número                                                                   |
+| double                      | Summations(int start, int end)                                     | Retorna o somatório dado um valor de inicio e fim                                                 |
+| double                      | Binomial(int numerator, int denominator)                           | Retorna o binomial de n(numerador), p(denominador) do tipo int                                    |
+| double                      | CountingPrincipleForEqualProbabilities(int possibility, int steps) | Retorna o total de possibilidades dados um valor de possibilidade iguais e a quantidade de passos |
+| double                      | Arrangements(int numerator, int denominator)                       | Retorna o arranjo simples de n(numerador) e k(denominador)                                        |
+| double                      | Combination(int elements, int step)                                | Retorna a combinação simples de n(elements) e p(steps)                                            |
+| long                        | CombinationLong(int elements, int step)                            | Retorna um valor do tipo long da combinação simples de n(elements) e p(steps)                     |
 
 <br>
 

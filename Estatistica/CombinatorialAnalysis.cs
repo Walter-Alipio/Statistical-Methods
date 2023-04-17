@@ -33,7 +33,7 @@ public static class CombinatorialAnalysis
         return Factorial(numerator) / (Factorial(denominator) * Factorial(numerator - denominator));
     }
 
-    public static double CountingPrinciple(int possibility, int steps)
+    public static double CountingPrincipleForEqualProbabilities(int possibility, int steps)
     {
         return Math.Pow(possibility, steps);
     }
