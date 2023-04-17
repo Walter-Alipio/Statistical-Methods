@@ -8,4 +8,9 @@ public static class Probabilities
         return @event / sample;
     }
 
+    public static double ProbabilityOfFail(double @event, double sample)
+    {
+        return (sample - @event) / sample;
+    }
+
 }
