@@ -7,7 +7,7 @@ public class ProbabilitiesTest
     [InlineData(0.4, 4, 10)]
     [InlineData(0.0026, 52, 20000)]
     [InlineData(0.0013, 26, 20000)]
-    public void OccurrenceProbability_ReturnsDoubleValue(double expected, double events, double sample)
+    public void OccurrenceProbability_ReturnsCalculatedValue_GivenNumberOfEventsAndSampleSize(double expected, double events, double sample)
     {
         // Given
 
